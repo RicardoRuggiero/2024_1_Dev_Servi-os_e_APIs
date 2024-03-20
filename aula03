@@ -1,0 +1,80 @@
+console.log('Hello world');
+//comentário
+/*
+comentário
+*/
+//const e let
+
+const PI = 3.1415;
+let minhaVariavel = 20;
+
+let x = ++minhaVariavel;
+
+console.log(minhaVariavel+",", x);
+
+console.log(21=='21');
+console.log(21==='21');
+
+
+x == 20 ? y == 10 : console.log("deu certo");
+
+let y = (x ==20) ?20 : 10;
+console.log(y);
+
+let nome = "Cicrano";
+let categoria = "fome";
+
+if(categoria){
+    console.log(categoria);
+}
+else{
+    console.log("nao definiu")
+}
+
+const A ={Prim:"Bom", Sec:"Dia"};
+console.log(A);
+
+let produto= {id:1, nome:"Produto 1"};
+//console.log(produto.id, produto.nome);
+
+produto.categoria ="alimento";
+produto.preco = 30;
+
+produto.imprimir =function(){
+    console.log(this.produto);
+}
+produto.imprimir();
+
+
+function soma (val1, val2){
+    return val1+val2;
+}
+console.log (soma(1,2));
+
+const carro = new Object();
+carro.nome="carro1";
+carro.marca="marcatal";
+console.log(carro);
+
+class Carro{
+    constructor(nome, marca){
+        this.nome = nome;
+        this.marca = marca;
+    }
+    imprimir(){
+        console.log(this);
+    }
+}
+let carro1 = new Carro("tal", "talcoisa");
+carro1.imprimir();
+
+let meuArray = ['abacaxi','bergamota','caqui'];
+console.log(meuArray);
+console.log(meuArray[1]);
+for(let i=0; i< meuArray.length; i++){
+    console.log(meuArray[i]);
+}
+
+for(let ind in meuArray)
+
+
